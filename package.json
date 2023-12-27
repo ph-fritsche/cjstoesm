@@ -7,7 +7,7 @@
 		"clean": "rimraf dist",
 		"lint": "tsc --noEmit && eslint \"src/**/*.ts\" --color",
 		"prettier": "prettier --write \"{src,test,documentation}/**/*.{js,ts,json,html,xml,css,md}\"",
-		"test": "NODE_OPTIONS='--loader=tsx' ava",
+		"test": "NODE_OPTIONS='--import=tsx' ava",
 		"prebuild": "pnpm run clean",
 		"build": "pnpm run prebuild && pnpm run rollup",
 		"build:built_in_module_map": "ts-node --esm script/generate-built-in-module-map.ts",
@@ -142,7 +142,7 @@
 			"ts": "module"
 		},
 		"nodeArguments": [
-			"--loader=tsx"
+			"--import=tsx"
 		],
 		"environmentVariables": {
 			"FORCE_COLOR": "3"
