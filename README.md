@@ -12,15 +12,16 @@
 
 <!-- SHADOW_SECTION_BADGES_START -->
 
-<a href="https://npmcharts.com/compare/cjstoesm?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/cjstoesm.svg"    /></a>
-<a href="https://www.npmjs.com/package/cjstoesm"><img alt="NPM version" src="https://badge.fury.io/js/cjstoesm.svg"    /></a>
-<img alt="Dependencies" src="https://img.shields.io/librariesio/github/wessberg%2Fcjstoesm.svg"    />
-<a href="https://github.com/wessberg/cjstoesm/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/wessberg%2Fcjstoesm.svg"    /></a>
-<a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"    /></a>
-<a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"    /></a>
-<a href="https://www.patreon.com/bePatron?u=11315442"><img alt="Support on Patreon" src="https://img.shields.io/badge/patreon-donate-green.svg"    /></a>
-
 <!-- SHADOW_SECTION_BADGES_END -->
+
+<blockquote style="border-left: 5px solid orange; border-right: 3px solid orange; padding: 1em 1em 1em 3em; position: relative;">
+<svg version="1.1" viewBox="0 0 16 16" width="1.5em" height="1.5em" aria-hidden="true"
+	style="display:inline-block; position: absolute; left: 1em;"
+><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>
+This is a fork of the
+<a href="https://github.com/wessberg/cjstoesm"><code>cjstoesm</code> package by Frederik Wessberg</a>
+which became incompatible with recent Typescript versions due to a change in Typescript's node factory APIs.
+</blockquote>
 
 <!-- SHADOW_SECTION_DESCRIPTION_LONG_START -->
 
@@ -149,20 +150,6 @@ import pkg from "./package.json" assert {type: "json"};
 <!-- SHADOW_SECTION_FEATURE_IMAGE_END -->
 
 <!-- SHADOW_SECTION_BACKERS_START -->
-
-## Backers
-
-| <a href="https://usebubbles.com"><img alt="Bubbles" src="https://uploads-ssl.webflow.com/5d682047c28b217055606673/5e5360be16879c1d0dca6514_icon-thin-128x128%402x.png" height="70"   /></a> | <a href="https://github.com/cblanc"><img alt="Christopher Blanchard" src="https://avatars0.githubusercontent.com/u/2160685?s=400&v=4" height="70"   /></a> | <a href="https://github.com/ideal-postcodes"><img alt="Ideal Postcodes" src="https://avatars.githubusercontent.com/u/4996310?s=200&v=4" height="70"   /></a> | <a href="https://www.xerox.com"><img alt="Xerox" src="https://avatars.githubusercontent.com/u/9158512?s=200&v=4" height="70"   /></a> | <a href="https://changelog.me"><img alt="Trent Raymond" src="https://avatars.githubusercontent.com/u/1509616?v=4" height="70"   /></a> | <a href="https://scrubtheweb.com"><img alt="scrubtheweb" src="https://avatars.githubusercontent.com/u/41668218?v=4" height="70"   /></a> | <a href="https://github.com/hjoelh"><img alt="Joel" src="https://avatars.githubusercontent.com/u/68335961?v=4" height="70"   /></a> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [Bubbles](https://usebubbles.com)<br><strong>Twitter</strong>: [@usebubbles](https://twitter.com/usebubbles)                                                                                | [Christopher Blanchard](https://github.com/cblanc)                                                                                                         | [Ideal Postcodes](https://github.com/ideal-postcodes)                                                                                                        | [Xerox](https://www.xerox.com)                                                                                                        | [Trent Raymond](https://changelog.me)                                                                                                  | [scrubtheweb](https://scrubtheweb.com)                                                                                                   | [Joel](https://github.com/hjoelh)                                                                                                   |
-
-### Patreon
-
-<a href="https://www.patreon.com/bePatron?u=11315442"><img alt="Patrons on Patreon" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dwessberg%26type%3Dpatrons"  width="200"  /></a>
-
-<!-- SHADOW_SECTION_BACKERS_END -->
-
-<!-- SHADOW_SECTION_TOC_START -->
 
 ## Table of Contents
 
@@ -565,24 +552,6 @@ You can provide options to the `cjsToEsm` Custom Transformer to configure its be
 | `importAssertions` _(optional)_         | Determines whether or not Import Assertions are included where relevant. Possible values are: true and false. See [API options](#api-options) for more details                  |
 | `typescript` _(optional)_               | If given, the TypeScript version to use internally for all operations.                                                                                                          |
 | `cwd` _(optional)_                      | The directory to use as the current working directory.                                                                                                                          |
-
-<!-- SHADOW_SECTION_CONTRIBUTING_START -->
-
-## Contributing
-
-Do you want to contribute? Awesome! Please follow [these recommendations](./CONTRIBUTING.md).
-
-<!-- SHADOW_SECTION_CONTRIBUTING_END -->
-
-<!-- SHADOW_SECTION_MAINTAINERS_START -->
-
-## Maintainers
-
-| <a href="mailto:frederikwessberg@hotmail.com"><img alt="Frederik Wessberg" src="https://avatars2.githubusercontent.com/u/20454213?s=460&v=4" height="70"   /></a>                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Frederik Wessberg](mailto:frederikwessberg@hotmail.com)<br><strong>Twitter</strong>: [@FredWessberg](https://twitter.com/FredWessberg)<br><strong>Github</strong>: [@wessberg](https://github.com/wessberg)<br>_Lead Developer_ |
-
-<!-- SHADOW_SECTION_MAINTAINERS_END -->
 
 <!-- SHADOW_SECTION_FAQ_START -->
 

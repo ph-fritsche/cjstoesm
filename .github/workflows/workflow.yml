@@ -33,3 +33,23 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+  release:
+    needs: run
+    runs-on: ubuntu-latest
+    if:
+      ${{ github.event_name == 'push' && contains('refs/heads/main,refs/heads/beta,refs/heads/alpha', github.ref) }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Setup pnpm
+        run: npm install pnpm -g
+      - name: Install
+        run: pnpm install
+      - name: Build
+        run: pnpm build
+      - name: Release
+        uses: ph-fritsche/action-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

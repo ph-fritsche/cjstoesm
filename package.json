@@ -1,11 +1,9 @@
 {
-	"name": "cjstoesm",
-	"version": "2.1.2",
+	"name": "@ph.fritsche/cjstoesm",
+	"version": "2.1.2-alpha.0",
+	"private": false,
 	"description": "A tool that can transform CommonJS to ESM",
 	"scripts": {
-		"generate:sandhog": "sandhog all --yes",
-		"generate:changelog": "standard-changelog --first-release",
-		"generate:all": "pnpm run generate:sandhog && pnpm run generate:changelog",
 		"clean": "rimraf dist",
 		"lint": "tsc --noEmit && eslint \"src/**/*.ts\" --color",
 		"prettier": "prettier --write \"{src,test,documentation}/**/*.{js,ts,json,html,xml,css,md}\"",
@@ -18,8 +16,6 @@
 		"rollup": "rollup -c rollup.config.mjs",
 		"rollup:watch": "rollup -c rollup.config.js --watch",
 		"preversion": "pnpm run lint && pnpm run build:built_in_module_map && pnpm run build",
-		"version": "pnpm run preversion && pnpm run generate:all && git add .",
-		"release": "np --no-cleanup --no-yarn",
 		"update:check": "pnpx npm-check-updates -x typescript-*,ava,@types/resolve --dep dev,prod",
 		"update:commit": "pnpx npm-check-updates -u -x typescript-*,ava,@types/resolve --dep dev,prod && pnpm update && pnpm install"
 	},
@@ -81,7 +77,6 @@
 		"pretty-quick": "^3.1.3",
 		"rimraf": "^3.0.2",
 		"rollup": "^2.75.6",
-		"sandhog": "^2.0.2",
 		"semver": "7.3.7",
 		"standard-changelog": "^2.0.27",
 		"tslib": "^2.4.0",
@@ -128,10 +123,7 @@
 	"module": "./dist/esm/index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/wessberg/cjstoesm.git"
-	},
-	"bugs": {
-		"url": "https://github.com/wessberg/cjstoesm/issues"
+		"url": "https://github.com/ph-fritsche/cjstoesm.git"
 	},
 	"engines": {
 		"node": ">=14.9.0"
